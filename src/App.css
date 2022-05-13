@@ -3,29 +3,53 @@
 }
 
 .App-logo {
-  height: 40vmin;
-  pointer-events: none;
+  /* height: 22vmin; */
+  /* background: url("./PUNK.gif") repeat; */
+  /* pointer-events: none; */
+  margin: 88px;
+  /* transition: transform 150ms ease-in-out; */
+}
+
+.App-logo:hover {
+  /* background: url("./PUNK.gif") repeat; */
+  transform: scale(2);
 }
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+    animation: App-logo-spin infinite 20s linear 1s;
   }
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: black; 
+  background-image: linear-gradient(45deg, #0075FF 25%, transparent 25%), linear-gradient(-45deg, #0075FF 25%, transparent 25%), linear-gradient(45deg, transparent 75%, #0075FF 75%), linear-gradient(-45deg, transparent 75%, #0075FF 75%);
+  background-size: 20px 20px;
+  background-position: 0 0, 0 10px, 10px -10px, -10px 0px;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: black;
+  z-index: 2;
 }
 
 .App-link {
-  color: #61dafb;
+  color: #000;
+  text-decoration: none;
+  background-color: #FF00E1;
+  padding: 2px 16px;
+  border-radius: 8px;
+  font-size: 1.8vh;
+  font-weight: 600;
+  transition: transform 300ms ease-in-out, color 300ms ease-in-out;
+}
+
+.App-link:hover {
+  color: white;
+  transform: scale(1.06);
 }
 
 @keyframes App-logo-spin {
@@ -35,4 +59,8 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.bottom {
+  color: black;
 }
