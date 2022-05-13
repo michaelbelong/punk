@@ -1,5 +1,4 @@
 import anim from './PUNK.gif';
-import Marquee from "react-fast-marquee";
 import './App.css';
 
 
